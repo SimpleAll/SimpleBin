@@ -4,6 +4,9 @@
 ; An explanation of each setting can be find online at https://github.com/PrivateBin/PrivateBin/wiki/Configuration.
 
 [main]
+
+name = "SimpleBin"
+
 ; enable or disable the discussion feature, defaults to true
 discussion = true
 
@@ -21,14 +24,13 @@ burnafterreadingselected = false
 
 ; which display mode to preselect by default, defaults to "plaintext"
 ; make sure the value exists in [formatter_options]
-; defaultformatter = "plaintext"
 defaultformatter = "markdown"
 
 ; (optional) set a syntax highlighting theme, as found in css/prettify/
 ; syntaxhighlightingtheme = "sons-of-obsidian"
 
 ; size limit per paste or comment in bytes, defaults to 2 Mibibytes
-sizelimit = 2097152
+sizelimit = 20971520
 
 ; template to include, default is "bootstrap" (tpl/bootstrap.html)
 template = "bootstrap"
@@ -69,10 +71,12 @@ languagedefault = "en"
 ; sha256 in HMAC for the deletion token
 zerobincompatibility = false
 
+qrcode = true
+
 [expire]
 ; expire value that is selected per default
 ; make sure the value exists in [expire_options]
-default = "1week"
+default = "never"
 
 ; optionally the "clone" button can be disabled on expiring pastes
 ; note that this only hides the button, copy & paste is still possible
