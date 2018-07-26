@@ -5,8 +5,6 @@
 
 [main]
 
-name = "SimpleBin"
-
 ; enable or disable the discussion feature, defaults to true
 discussion = true
 
@@ -70,8 +68,6 @@ languagedefault = "en"
 ; if enabled will use base64.js version 1.7 instead of 2.1.9 and sha1 instead of
 ; sha256 in HMAC for the deletion token
 zerobincompatibility = false
-
-qrcode = true
 
 [expire]
 ; expire value that is selected per default
